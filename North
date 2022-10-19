@@ -1,0 +1,9 @@
+local NotificationHolder = loadstring(game:HttpGet("https://raw.githubusercontent.com/boomcacas/UII/main/STX/Module"))()
+local Notification = loadstring(game:HttpGet("https://raw.githubusercontent.com/boomcacas/UII/main/Client"))()
+repeat wait() until game:GetService("Workspace").WorkspaceUtilities.ScreenMap["NorthGenerator_Light"].LightPart.PointLight.Changed:Connect()
+repeat wait() until game:GetService("Workspace").WorkspaceUtilities.ScreenMap["NorthGenerator_Light"].LightPart.PointLight.Enabled 
+Notification:Notify(
+    {Title = "Androminome", Description = "North Generator Light"},
+    {OutlineColor = Color3.fromRGB(100,60,156),Time = 5, Type = "image"},
+    {Image = "http://www.roblox.com/asset/?id=6023426926", ImageColor = Color3.fromRGB(100,60,156)}
+)
